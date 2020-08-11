@@ -1,0 +1,16 @@
+.hello {
+    color: red;
+}
+
+p {
+    color: yellow;
+}
+
+#id {
+    color: violet;
+}
+
+#body-class {
+    padding: 40px;
+    margin: 50px;
+}
