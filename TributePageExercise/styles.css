@@ -1,5 +1,12 @@
 #main {
+    background-color: lavender;
+    font-family: verdana;
+    padding: 20px;
+}
+
+#main-container{
     background-color: lightgray;
+    padding: 20px;
 }
 #title {
     text-align: center;
@@ -7,6 +14,8 @@
 
 #img-div {
     margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 10px;
 }
 
 #image {
