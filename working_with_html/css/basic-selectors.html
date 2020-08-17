@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Selectors</title>
+    <style>
+        * {
+            font-family: Verdana, Arial, Sans-serif;
+        }
+
+        h1 {
+            font-size: 120%;
+        }
+
+        #navigation{
+            border: 1px solid black;
+            padding: 40px;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        li, a {
+            color: red;
+        }
+
+        #second-navigation {
+            border: 1px solid blue;
+            padding: 40px;
+        }
+
+        strong {
+            text-decoration: underline;
+        }
+
+        div > strong {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Basic Selectors</h1>
+    <p>Lorem ipsum dolor <a href="https://www.youtube.com">youtube link </a>sit amet consectetur, 
+        adipisicing elit. Optio architecto neque qui sed illo ducimus officiis quo pariatur cumque accusantium  <em class="warning">warning</em>.</p>
+    <ul id="navigation">
+        <li><a href="https://www.youtube.com">Apples</a></li>
+        <li><a href="https://www.youtube.com">Bananas</a></li>
+        <li><a href="https://www.youtube.com">Cherries</a></li>
+    </ul>
+
+    <ul id="second-navigation">
+        <li><a href="https://www.youtube.com">Apples</a></li>
+        <li><a href="https://www.youtube.com">Bananas</a></li>
+        <li><a href="https://www.youtube.com">Cherries</a></li>
+    </ul>
+
+    <strong>Lorem ipsum dolor sit amet.</strong>
+    <div>Lorem, ipsum.
+        <strong>Lorem, ipsum.</strong>
+    </div>
+</body>
+</html>
