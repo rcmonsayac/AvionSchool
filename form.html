@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
-    <form>
-        <input type="text" name="first_name" id="first_name" class="form-input"/>
-        <input type="radio" name="male" id="male" class="form-input" />
-        <input type="submit" class="form-input button" id="submit-button">
+    <form action="index.html" target="_blank" method="POST">
+        <label>First Name</label>
+        <input type="text" name="first-name" id="first-name" class="form-input">
+
+        <div>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male" id="male" class="form-input">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" class="form-input">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other" id="other" class="form-input">
+            <label for="other">Other</label>
+        </div>
+
+        <input type="submit" value="Submit" id="submit-button" class="form-input button">
     </form>
 </body>
 </html>
+
+<div class="form-group">
+    <label>
+        text
+    </label>
+    <input input="text" class="form-input" />
+</div>
+
+<div class="form-group">
+    <label>
+        radio
+    </label>
+    <input input type="radio" class="form-input" />
+</div>
+
+<div class="form-group">
+    <label>
+
+    </label>
+    <input class="form-input" />
+</div>
