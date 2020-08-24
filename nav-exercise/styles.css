@@ -1,0 +1,95 @@
+/* the side navigation menu */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  /* sidebar links */
+  .sidebar-main a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .sidebar-sub a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+  /* Active/current links */
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  /* links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 230px;
+    padding: 1px 16px;
+    /* height: 1000px; */
+  }
+
+  .sidebar-title {
+      text-align: center;
+      padding: 5px;
+  }
+
+  .sidebar-sub-item {
+      font-size: 15px;
+      padding: 0px 0px 0px 20px;
+  }
+
+  .sidebar-main i {
+      margin-right: 3px;
+  }
+
+  .container {
+      margin: 30px 10px;
+  }
+
+  .main-section, .main-section h1, .sub-section h3, .subsection-content {
+      margin-bottom: 10px;
+  }
+
+
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      height: 300px;
+
+    }
+    div.content {
+        margin-left: 0;
+        margin-top: 300px;
+    }
+    .sidebar-sub{
+        display: none;
+    }
+  }
